@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentacao Tecnica</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <nav id="navbar" aria-label="Navegação da documentação técnica">
+
+      <header id="header">
+        <h1>Banco de Dados</h1>
+      </header>
+      <ul>
+        <li><a href="#Introdução" class="nav-link">Introdução</a></li>
+
+        <li><a href="#Conceitos_Básicos" class="nav-link">Conceitos Básicos</a></li>
+
+        <li><a href="#Modelagem_de_Dados" class="nav-link">Modelagem de Dados</a></li>
+
+        <li><a href="#Linguagem_SQL" class="nav-link">Linguagem SQL</a></li>
+
+        <li><a href="#Tipos_de_Banco_de_Dados" class="nav-link">Tipos de Banco de Dados</a></li>
+
+        <li><a href="#Otimização_de_Consultas" class="nav-link">Otimização de Consultas</a></li>
+
+        <li><a href="#Backup_e_Recuperação" class="nav-link">Backup e Recuperação</a></li>
+
+        <li><a href="#Segurança" class="nav-link">Segurança</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introdução">
+
+        <header class="header">Introdução</header>
+
+          <div>
+
+            <h3>Definição:</h3>
+
+            <p>Um banco de dados é um sistema organizado para armazenar, gerenciar e recuperar informações. Ele é projetado para lidar com grandes volumes de dados de forma eficiente.</p>
+
+          </div>
+
+          <div>
+
+            <h3>Importância:</h3>
+
+            <p>Bancos de dados são fundamentais para sistemas modernos, como aplicativos, sites e empresas que dependem de dados para tomar decisões estratégicas. Eles permitem:</p>
+            <ul>
+              <li>Organização de informações.</li>
+              <li>Acesso rápido e seguro.</li>
+              <li>Análise de dados para insights valiosos.</li>
+            </ul>
+
+          </div>
+
+      </section>
+
+      <section class="main-section" id="Conceitos_Básicos">
+
+        <header class="header">Conceitos Básicos</header>
+
+          <div>
+            <h3>Dados:</h3>
+            <p>Representações de informações que podem ser processadas por sistemas.</p>
+          </div>
+
+          <div>
+            <h3>Tabelas:</h3>
+            <p>Estruturas que organizam dados em linhas (registros) e colunas (atributos).</p>
+          </div>
+
+          <div>
+            <h3>Chaves Primárias:</h3>
+            <p>Identificadores únicos que garantem a integridade dos dados.</p>
+          </div>
+
+          <div>
+            <h3>Relações:</h3>
+            <p>Conexões entre tabelas, como "um para muitos" ou "muitos para muitos".</p>
+          </div>
+
+          <div>
+            <h3>Transações:</h3>
+            <p>Conjuntos de operações que garantem consistência e integridade dos dados.</p>
+          </div>
+
+      </section>
+
+      <section class="main-section" id="Modelagem_de_Dados">
+
+        <header class="header">Modelagem de Dados</header>
+
+          <div>
+
+            <h3>Diagramas Entidade-Relacionamento (DER):</h3>
+            <p>Representam graficamente as entidades e suas relações.</p>
+
+          </div>
+
+          <div>
+
+            <h3>Normalização:</h3>
+            <p>Processo de organizar dados para eliminar redundâncias e melhorar a integridade.</p>
+            <ul>
+              <li>Exemplo: Dividir uma tabela grande em várias tabelas menores relacionadas.</li>
+            </ul>
+
+          </div>
+
+          <div>
+
+            <h3>Desnormalização:</h3>
+            <p>Combina tabelas para melhorar o desempenho em consultas específicas.</p>
+            
+          </div>
+      </section>
+
+      <section class="main-section" id="Linguagem_SQL">
+
+        <header class="header">Linguagem SQL</header>
+
+          <div>
+
+            <h3>Comandos Básicos:</h3>
+            <ul>
+              <li><code>SELECT</code>: Recupera dados de uma tabela.</li>
+              <li><code>INSERT</code>: Adiciona novos registros.</li>
+              <li><code>UPDATE</code>: Modifica registros existentes.</li>
+              <li><code>DELETE</code>: Remove registros.</li>
+            </ul>
+
+          </div>
+
+          <div>
+
+            <h3>Funções Avançadas:</h3>
+            <ul>
+              <li><code>JOIN</code>: Combina dados de múltiplas tabelas.</li>
+              <li>Subconsultas: Consultas dentro de outras consultas.</li>
+              <li>Agrupamentos: Uso de <code>GROUP BY</code> para organizar dados.</li>
+            </ul>
+
+          </div>
+
+          <div>
+
+            <h3>Procedimentos Armazenados:</h3>
+            <p>Scripts SQL que podem ser executados diretamente no banco de dados.</p>
+
+          </div>
+
+      </section>
+
+      <section class="main-section" id="Tipos_de_Banco_de_Dados">
+
+        <header class="header">Tipos de Banco de Dados</header>
+          
+          <div>
+            <h3>Relacional:</h3>
+            <p>Usa tabelas e SQL (ex.: MySQL, PostgreSQL).</p>
+          </div>
+
+          <div>
+            <h3>NoSQL:</h3>
+            <p>Para dados não estruturados ou semi-estruturados (ex.: MongoDB, Cassandra).</p>
+          </div>
+
+          <div>
+            <h3>Em Memória:</h3>
+            <p>Alta velocidade para dados temporários (ex.: Redis).</p>
+          </div>
+
+          <div>
+            <h3>Distribuído:</h3>
+            <p>Armazena dados em múltiplos servidores para escalabilidade (ex.: Apache Cassandra).</p>
+          </div>
+
+          <div>
+            <h3>Orientado a Grafos:</h3>
+            <p>Modela relações complexas (ex.: Neo4j).</p>
+          </div>
+
+      </section>
+
+      <section class="main-section" id="Otimização_de_Consultas">
+
+        <header class="header">Otimização de Consultas</header>
+
+          <div>
+            <h3>Índices:</h3>
+            <p>Melhoram a velocidade de busca, mas devem ser usados com cuidado para evitar sobrecarga.</p>
+          </div>
+
+          <div>
+            <h3>Planejamento de Execução:</h3>
+            <p>Ferramentas como <code>EXPLAIN</code> ajudam a entender como as consultas são processadas.</p>
+          </div>
+
+          <div>
+            <h3>Caching:</h3>
+            <p>Armazena resultados temporários para acelerar consultas repetidas.</p>
+          </div>
+
+          <div>
+            <h3>Particionamento:</h3>
+            <p>Divide grandes tabelas em partes menores para melhorar o desempenho.</p>
+          </div>
+      </section>
+
+      <section class="main-section" id="Backup_e_Recuperação">
+
+        <header class="header">Backup e Recuperação</header>
+        
+          <div>
+            <h3>Estratégias de Backup:</h3>
+            <ul>
+              <li>Incremental: Apenas mudanças desde o último backup.</li>
+              <li>Completo: Cópia de todos os dados.</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3>Recuperação:</h3>
+            <ul>
+              <li>Restauração de backups em caso de falhas.</li>
+              <li>Ferramentas de recuperação para dados corrompidos.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Automatização:</h3>
+            <p>Configuração de backups automáticos para garantir segurança.</p>
+          </div>
+        
+      </section>
+
+      <section class="main-section" id="Segurança">
+
+        <header class="header">Segurança</header>
+
+          <div>
+            <h3>Controle de Acesso:</h3>
+            <p>Define permissões para usuários e grupos.</p>
+          </div>
+
+          <div>
+            <h3>Proteção contra SQL Injection:</h3>
+            <p>Validação de entradas para evitar ataques.</p>
+          </div>
+
+          <div>
+            <h3>Criptografia:</h3>
+            <p>Protege dados sensíveis em trânsito e em repouso.</p>
+          </div>
+
+          <div>
+            <h3>Auditoria:</h3>
+            <p>Registra atividades no banco de dados para monitoramento e detecção de problemas.</p>
+          </div>
+
+      </section>
+
+    </main>
+    <footer class="footer">
+      <p>Feito por Alexandre Costa</p>
+      <div class="links">
+        <a href="https://github.com/alexandrecosta085" target="_blank">GitHub</a>
+        <a href="https://instagram.com/xandy_costa1" target="_blank">Instagram</a>
+      </div>
+    </footer>
+  </body>
+</html>
