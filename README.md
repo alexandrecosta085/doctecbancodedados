@@ -37,6 +37,11 @@ Este projeto apresenta uma documentação técnica completa sobre Bancos de Dado
 ## Responsividade
 O projeto utiliza **media queries** no CSS para oferecer uma experiência de navegação otimizada em dispositivos móveis.
 
+
+
+![site](https://github.com/user-attachments/assets/bf29c497-05ae-4c5b-b356-8f4614a9e7c9)
+
+
 ## Contato
 Feito por **Alexandre Costa**. Entre em contato:
 - GitHub: [alexandrecosta085](https://github.com/alexandrecosta085)
